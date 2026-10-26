@@ -1,0 +1,420 @@
+void main() {
+//    Q1 Java mein for loop ka use karke 1 se 10 tak numbers print karne ka program likho
+
+    for (int i = 1; i <= 10; i++){
+        System.out.println(i);
+    }
+
+//    ========================================================================
+
+//    Q2 Ab Java mein program likho jo 10 se 1 tak reverse counting print kare.
+
+    for (int i = 10; i >= 1; i--){
+        System.out.println(i);
+    }
+
+//    =========================================================================
+//    Q3 Java program likho jo 1 se 20 tak sirf even numbers print kare.
+
+    for (int i = 2; i <= 20; i = i + 2){
+        System.out.println(i);
+    }
+
+//    ==============================================================================
+
+//    Q4 Java mein for loop use karke 1 se 50 tak sirf odd numbers print karne ka program likho
+
+    for (int i = 1; i <= 50; i = i + 2) {
+        System.out.println(i);
+    }
+
+//    ================================================================================
+
+//    Q5 Java mein for loop use karke 1 se 10 tak ke sabhi numbers ka sum calculate karo aur
+//    final sum print karo
+
+    int sum = 0;
+    for (int i = 1; i<=10; i++){
+        sum = sum + i ;
+
+    }
+    System.out.println(sum);
+
+//    ===============================================================================
+
+//    Q6 Java mein for loop use karke 1 se 20 tak ke sabhi even numbers ka sum calculate karo aur
+//    final sum print karo
+
+    int sum = 0;
+
+    for (int i = 2; i <= 20; i = i + 2){
+        sum = sum + i;
+    }
+    System.out.println(sum);
+//
+//    ==============================================================================
+//
+//    Q7 Java mein for loop use karke 1 se 100 tak kitne numbers 7 se divisible hain,
+//    unki counting karo aur total count print karo
+
+    int count = 0;
+
+    for (int i = 7; i <= 100; i = i+7) {
+        count = count + 1 ;
+    }
+    System.out.println(count);
+
+//    ==============================================================================
+
+//    Q8 Java mein for loop use karke 1 se 100 tak aise numbers ka count nikalo jo 3 aur 5 dono se
+//    divisible hain Final count print karna hai.
+//
+    int count=0;
+    for (int i = 1; i<=100; i++){
+        if (i%3==0 && i%5==0){
+            count++ ;
+            System.out.println(i);
+        }
+
+    }
+    System.out.println("==================");
+    System.out.println(count);
+
+//    =================================================================
+
+//    Q9 Java mein for loop use karke 1 se 100 tak ke numbers ka sum nikalo, lekin sirf
+//    un numbers ka jo 3 se divisible hain aur 5 se divisible nahi hain.
+
+    int sum = 0;
+
+    for (int i = 1; i <= 100; i++){
+        if (i % 3 == 0 && i % 5 !=0){
+            sum = sum + i ;
+            System.out.println(i);
+        }
+    }
+    System.out.println("========================");
+    System.out.println(sum);
+
+//    ==============================================================================
+//
+//    Q10 Java mein for loop use karke 1 se 10 tak har number ka factorial calculate karo.
+
+    int i,j, fact;
+    for (i=1; i<=10; i++){
+        fact= 1;
+        for (j=i; j>=1; j--){
+            fact = fact *j;
+        }
+        System.out.println("Factorial Of "+i+" = "+fact);
+    }
+
+//    ==================================================================================
+
+//   Q11Java mein for loop use karke number 1234 ke digits ka sum nikal aur final sum print kar.
+
+    int num = 1234;
+    int sum=0;
+
+    for (  ; num >0 ; num = num / 10){
+        int digit = num % 10;
+        sum = sum + digit;
+    }
+    System.out.println("sum if digits= " + sum);
+
+//    ==================================================================================
+
+//    Q12
+
+    int num = 123;
+    int sum = 0;
+
+    for (; num > 0; num = num / 10){
+        int digit = num % 10;
+        sum = sum + digit ;
+
+    }
+    System.out.println("sum if digits=  " + sum);
+
+//    ==============================================================================
+
+//    Q13 Java mein for loop ka use karke 1 se 20 tak ke saare even numbers print karo.
+
+//    for (int i = 2; i<=20; i= i + 2){
+//        System.out.println(i);
+//    }
+
+//    ==============================================================================
+//    Q14 Java mein for loop ka use karke 1 se 50 tak ka sabse bada number find
+//    karo jo 7 se divisible ho.
+
+    for (int i = 50; i >= 1; i--) {
+        if (i % 7 == 0) {
+            System.out.println(i);
+            break;
+        }
+    }
+
+//    ===========================================================================
+
+//    Q15 Java mein for loop ka use karke user se ek number input lo aur uska multiplication table
+//    1 se 10 tak print karo.
+
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+
+    for (int i = 1; i <= 10; i++) {
+        System.out.println(num * i);
+    }
+
+//    ====================================================================================
+
+//    Q16 Java mein for loop ka use karke 1 se 20 tak kitne even numbers aur
+//    kitne odd numbers hain, count karo.
+
+    int evencount = 0;
+    int oddcount = 0;
+
+    for (int i = 1; i <= 20; i++) {
+        if (i % 2 == 0) {
+            evencount = evencount + 1;
+        } else {
+            oddcount = oddcount + 1;
+        }
+    }
+
+    System.out.println("Even count = " + evencount);
+    System.out.println("Odd count = " + oddcount);
+
+//    ===============================================================================
+
+//    Q17 Java mein ek program likho jo 12345   ko reverse karke print kare.
+
+    int num = 12345;
+    int reverse = 0;
+
+    for (; num > 0; num = num / 10) {
+        int digit = num % 10;
+        reverse = reverse * 10 + digit;
+    }
+
+    System.out.println(reverse);
+
+//    ================================================================================
+
+//    Q18 Find the Largest Digit of 58327
+
+    int num = 58327;
+    int largestdigit = 7;
+
+    for (; num > 0; num = num / 10 ){
+        int digit = num % 10 ;
+        if (digit > largestdigit){
+            largestdigit = digit;
+        }
+    }
+    System.out.println(largestdigit);
+
+//    ========================================================================================
+
+//    Q19 Find the smallest Digit of 683427
+
+    int num = 683427;
+    int smallestdigit = 7;
+
+    for (; num > 0; num=num / 10){
+        int digit = num % 10;
+        if (digit < smallestdigit){
+            smallestdigit = digit;
+        }
+    }
+    System.out.println(smallestdigit);
+
+//    =============================================================================
+
+//    Q20 Count Digits Greater Than 5 in 5836274
+
+    int num = 5836274;
+    int count = 0;
+
+    for (; num > 0; num = num / 10){
+        int digit = num % 10;
+        if (digit>5){
+            count++ ;
+        }
+    }
+    System.out.println(count);
+
+//    ==================================================================================
+
+//    Q21 Count Even Digits in 7284361
+
+    int num = 7284361;
+    int count = 0;
+
+    for (; num >0; num = num / 10){
+        int digit = num % 10;
+        if ( digit % 2 ==0){
+            count++ ;
+        }
+    }
+    System.out.println(count);
+
+//    =============================================================================
+
+//    Q22 sum of even digits in 5836274
+
+    int num = 5836274;
+    int sum = 0;
+
+    for (; num >0; num = num / 10){
+        int digit = num % 10;
+        if (digit % 2 ==0){
+            sum = sum + digit;
+        }
+    }
+    System.out.println(sum);
+
+//    ========================================================================
+
+//    Q23 Sum of Odd Digits in 5836274;
+
+    int num = 5836274;
+    int sum = 0;
+
+    for (; num > 0; num = num / 10){
+        int digit = num % 10;
+        if (digit % 2 != 0){
+            sum = sum + digit;
+        }
+    }
+    System.out.println(sum);
+
+//    ============================================================================
+
+//    Q24 Count Digits Divisible by 3 in 9364275;
+
+    int num = 9364275;
+    int count = 0;
+
+    for (; num > 0; num = num / 10){
+        int digit = num % 10;
+        if (digit % 3 ==0){
+            count ++ ;
+        }
+    }
+    System.out.println(count);
+
+//    ==============================================================================
+
+//    Q25 Take input rom user and print multiplication table of 1 to 10
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number : ");
+    int num = sc.nextInt();
+
+    for (int i =1; i <= 10; i++){
+        int sum = num * i;
+        System.out.println(sum);
+    }
+
+//    ================================================================================
+
+//    Q26 User se ek number n input lo aur for loop ka use karke 1 se n tak ke
+//    saare numbers ka sum nikalo.
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the number");
+    int num = sc.nextInt();
+    int sum = 0;
+
+    for (int i= 1; i<=num; i++){
+         sum = sum + i;
+
+    }
+    System.out.println(sum);
+
+//    ============================================================================
+
+//    Q27 User se ek number n input lo aur 1 se n tak kitne even numbers hain, unki counting karo.
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number : ");
+    int num = sc.nextInt();
+    int count = 0;
+
+    for (int i = 1; i<=num; i++){
+        if (i % 2 == 0){
+            count++;
+        }
+    }
+    System.out.println(count);
+
+//    ===================================================================================
+
+//    Q28 User se ek number n input lo aur 1 se n tak ke saare even numbers ka sum nikalo.
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number : ");
+    int num = sc.nextInt();
+    int sum = 0;
+
+    for (int i = 1; i <=num; i++){
+        if (i % 2 == 0){
+            sum = sum + i ;
+        }
+    }
+    System.out.println(sum);
+
+//    ==============================================================================
+
+//    Q29 User se ek number n input lo aur 1 se n tak kitne odd numbers hain, unki counting karo.
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number");
+    int num = sc.nextInt();
+    int count = 0;
+
+    for (int i = 1; i<=num; i++){
+        if ( i % 2 !=0){
+            count++;
+        }
+    }
+    System.out.println(count);
+
+//    ==============================================================================
+
+//    Q30 User se ek number n input lo aur 1 se n tak jitne numbers 5 se divisible hain,
+//    unka sum nikalo
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the number : ");
+    int num = sc.nextInt();
+    int sum = 0;
+
+    for (int i=1; i<=num; i++){
+        if (i % 5 ==0){
+            sum = sum + i;
+        }
+    }
+    System.out.println(sum);
+
+//    ================================================================================
+
+//    Q31 User se ek number n input lo aur 1 se n tak kitne numbers 3 se divisible hain,
+//    unki counting karo.
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the number : ");
+    int num = sc.nextInt();
+    int count = 0;
+
+    for (int i = 1; i<=num; i++){
+        if (i % 3 == 0){
+            count++;
+        }
+    }
+    System.out.println(count);
+}
+
+
